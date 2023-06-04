@@ -1,5 +1,5 @@
 {
-  "name": "mediasoup-custom",
+  "name": "sutoga-chabackend",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,10 +9,6 @@
     "mon": "nodemon src/app.js",
     "watch": "watchify public/index.js -o public/bundle.js -v",
     "lint": "npx prettier --write .",
-    "docker-build": "docker build --tag dirvann/mediasoup-video-rooms .",
-    "docker-run": "docker run --name dirvann-mediasoup-rooms -p 10000-10100:10000-10100 -p 3016:3016 dirvann/mediasoup-video-rooms",
-    "docker-start": "docker start dirvann-mediasoup-rooms",
-    "docker-stop": "docker stop dirvann-mediasoup-rooms",
     "compile-mediasoup-client": "npx browserify mediasoup-client-compile.js -o public/modules/mediasoupclient.min.js"
   },
   "author": "",
